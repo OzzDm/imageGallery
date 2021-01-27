@@ -1,0 +1,24 @@
+<%- include('layouts/head.ejs') %>
+<br>
+<h1 class="text-center">Image Gallery</h1>
+<br>
+
+<div class="container">
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <% if(success) { %>
+            <div class="alert alert-success alert-dismissible">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Success!</strong> Your Image File is Uploaded.
+            </div>
+        <% } %>
+        <label>Add File..</label>
+        <input type="file" name="image" required>
+        <button class="btn btn-primary" type="submit">Upload</button>
+    </form>
+</div>
+
+<% for(let img of records) {%>
+<img style="width: 100%;" src="<%= img.imagename %>" class="img-thumbnail" />
+<% } %>
+
+<%- include('layouts/foot.ejs') %>
