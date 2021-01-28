@@ -1,5 +1,5 @@
 # imageGallery
-A simple imageGallery application made using NodeJs.
+A simple imageGallery web application made using NodeJs.
 
 The images are stored in NoSQL database.
 
