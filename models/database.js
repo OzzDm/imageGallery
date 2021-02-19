@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 
-mongoose.connect('mongodb+srv://user1:mongoDB_Server@cluster0.ynmsx.mongodb.net/imagesDB?retryWrites=true&w=majority',{
+mongoose.connect('mongodb+srv://<username>:<password>@cluster0.ynmsx.mongodb.net/<databaseName>?retryWrites=true&w=majority',{
     useNewUrlParser:true,
     useUnifiedTopology:true
 });
